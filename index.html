@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Callbacks - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage callback function." />
+	<meta name="keywords"  content="fullpage,jquery,demo,callbac,function,event" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['white', 'white', 'white', 'white', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+				menu: '#menu',
+
+			});
+
+		});
+	</script>
+
+	<style>
+		#section0 img{
+			max-width: 80%;
+		}
+		#section0 p{
+			position: right
+		}
+		#section1 video{
+			left: 30%;
+			top: 3%;
+			max-width: 70%;
+			position: absolute;
+		}
+		#section1 p{
+			display:none;
+		}
+		#section2 video{
+			left: 30%;
+			top: 3%;
+			max-width: 70%;
+			position: absolute;
+		}
+		#section2 p{
+			display:none;
+		}
+		#section3 video{
+			left: 30%;
+			top: 3%;
+			max-width: 70%;
+			position: absolute;
+		}
+		#section2 p{
+			display:none;
+		}
+		#text {
+			background-color: white;
+			max-width: 28%;
+			height: 650px;
+			margin-left: 10px;
+		}
+
+
+
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+
+
+
+
+<ul id="menu">
+	<li data-menuanchor="secondPage"><a href="#secondPage">WHY TO INVEST IN STOCKS</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">WHAT IS STOCKMARKET</a></li>
+	<li data-menuanchor="4thPage"><a href="#4thPage">HOW TO BENEFIT FROM IT</a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<img src="imgs/richman.png" alt="fullPage" />
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<div>
+				<video controls autoplay > //add control attribute if u want
+					<source src="imgs/why.mp4" type="video/mp4">
+						Your browser does not support the audio element.
+				</video>
+					</div>
+			<div id="text">
+				<section class="spotlight info condense">
+				<h2>Return</h2>
+				<h6>Return is the amount of profit that comes to you as the result of your investment.
+					<a href="spotlight.htm" title="student profile" class="more">more info</a></h6>
+				</section>
+				<section class="show info condense">
+				<h2>Agility</h2>
+
+				<h6>You can learn to profit from a stock no matter if it goes up, down, or sideways.
+					 That’s very tough to do in business, but in the stock market, it doesn’t matter—because there are profit strategies for movement in any direction.
+					</h6>
+				</section>
+				<section class="show info condense">
+				<h2>Liquidity</h2>
+
+				<h6>The stock market offers us the ability to easily buy and sell your paper assets. This is liquidity. Liquidity is the ease with which an asset can be converted to cash.
+
+				</h6>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<div>
+				<video controls autoplay > //add control attribute if u want
+					<source src="imgs/What.mp4" type="video/mp4">
+						Your browser does not support the audio element.
+				</video>
+					</div>
+			<div id="text">
+				<section class="spotlight info condense">
+				<h2>Share</h2>
+				<h6>Shares are rights to assets or securities.A share stands for a share in a company.
+
+					</h6>
+				</section>
+				<section class="show info condense">
+				<h2>Listing</h2>
+
+				<h6>Listing, also known as IPO (Intitial Public Offering) is process of opening the sales of a company's share to the public.
+					</h6>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<div>
+				<video controls autoplay > //add control attribute if u want
+					<source src="imgs/how.mp4" type="video/mp4">
+						Your browser does not support the audio element.
+				</video>
+					</div>
+					<div id="text">
+						<section class="spotlight info condense">
+						<h2>Dividends</h2>
+						<h6>Dividend is sum of money paid regularly (typically annually) by a company to its shareholders out of its profits (or reserves)
+						</h6>
+						</section>
+						<section class="show info condense">
+						<h2>Portfolio</h2>
+
+						<h6>Portfolio is a document where, all the details about your equity investments will be recorded.
+							</h6>
+						</section>
+						<section class="show info condense">
+						<h2>Diversification</h2>
+
+						<h6>Diversification is the process of including vastly different companies' share in your portfolio as that when a market dip happens, you can take it.
+							</h6>
+						</section>
+						<section class="show info condense">
+							<h2>SENSEX AND NIFTY</h2>
+
+							<h6>SENSEX and NIFTY are a collective market index for the top companies listed in BSE snd NSE respectively. The value of the NIFTY van give you the overall performance of to companies in NSE
+								</h6>
+						</section>
+					</div>
+		</div>
+	</div>
+
+
+</div>
+
+
+</body>
+</html>
